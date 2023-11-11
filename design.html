@@ -2,25 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
 <div class="page-wrapper">
-    <!--        Navbar Section      -->
+    <!-- Navbar Section -->
     <header class="container-fluid">
         <div class="row">
             <div class="col">
                 <nav style="font-family: abel;" class="navbar navbar-expand-lg">
 
                     <img style="margin-right: 10px;" src="images/logo.png" height="50" width="50"/>
-                    <a style="font-size: 2rem; margin-right: 40px" class="d-none d-lg-block navbar-brand" href="#">codeup
+                    <!--        added the mb-2 within the class= for <a>codeup design</a> to correct the horizontal alignment of the text lines in the navbar    -->
+                    <a style="font-size: 2rem; margin-right: 40px" class="mb-2 d-none d-lg-block navbar-brand" href="#">codeup
                         design</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -28,8 +27,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="text-uppercase navbar-nav me-auto mb-2 mb-lg-0 d-flex">
-
+                        <ul class="text-uppercase navbar-nav me-auto mb-auto">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">Services</a>
                             </li>
@@ -48,54 +46,59 @@
             </div>
         </div>
     </header>
-    <!--        Hero Section    -->
+    <!-- Hero Section -->
     <hero class="container">
-
-        <div class="row text-uppercase mb-5">
+        <!--        added the m-3, mb-5 to correct the spacing of the Hero Section    -->
+        <div class="row text-uppercase m-3 mb-5">
             <div class="col-lg-12 my-5 my-lg-0 text-center">
-                <h1 style="margin-bottom: 25px"><strong>visual design & web development</strong></h1>
-                <h2><strong>from park city, utah</strong></h2>
+                <h1 class="display-2 fw-bolder mb-5"><strong>visual design & web development</strong></h1> <!-- used the display-2 for best match of text -->
+                <h2 class="display-6 fw-bolder"><strong>from park city, utah</strong></h2>
             </div>
         </div>
-
         <div class="row gy-4 gy-lg-0 px-5 px-lg-0 mx-5 mx-lg-0 justify-content-lg-center">
-            <div class="col-6 col-lg-1">
-                <div style="border: white" ></div>
-                <div class="circle text-white" style="background-color: #e6563b">design</div>
-            </div>
-            <div class="col-6 col-lg-1">
-                <div class="circle text-white" style="background-color: #eb9d3a">develop</div>
-            </div>
-            <div class="col-6 col-lg-1">
-                <div class="circle text-white" style="background-color: #7cb06c">support</div>
-            </div>
-            <div class="col-6 col-lg-1">
-                <div class="circle text-white" style="background-color: #00aba9">host</div>
+            <div class="row gy-4 gy-lg-0 px-5 px-lg-0 mx-5 mx-lg-0 justify-content-lg-center">
+                <div class="col-6 col-lg-1">
+                    <div class="circle d-flex align-items-center justify-content-center text-white" style="background-color: #e6563b">DESIGN</div>
+                </div>
+                <div class="col-6 col-lg-1">
+                    <div class="circle d-flex align-items-center justify-content-center text-white" style="background-color: #eb9d3a">DEVELOP</div>
+                </div>
+                <div class="col-6 col-lg-1">
+                    <div class="circle d-flex align-items-center justify-content-center text-white" style="background-color: #7cb06c">SUPPORT</div>
+                </div>
+                <div class="col-6 col-lg-1">
+                    <div class="circle d-flex align-items-center justify-content-center text-white" style="background-color: #00aba9">HOST</div>
+                </div>
             </div>
         </div>
-
     </hero>
     <div class="container-fluid d-none d-lg-block">
         <div class="row">
             <div class="col">
-                <hr style="margin: 2rem 4rem">
-                <!--                <hr style="margin: 2rem 5rem">-->
+                <hr style="margin: 2rem 12rem">
             </div>
         </div>
     </div>
-    <!--        Main Section    -->
-
+    <!-- Main Section -->
     <main class="container">
         <div class="row">
             <div class="col-12 col-lg-8">
                 <p class="text-center">SELECTED WORK</p>
-                <img src="images/apple-ipad.jpg" height="200" width="400" alt="ipad"/>
-                <img src="images/macbook.jpg" height="200" width="400" alt="macbook"/>
-                <img src="images/man.jpg" height="200" width="400" alt="man image"/>
-                <img src="images/security.jpg" height="200" width="400" alt="security image"/>
-
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="images/apple-ipad.jpg" class="img-fluid" alt="ipad"/>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <img src="images/macbook.jpg" class="img-fluid" alt="macbook"/>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <img src="images/man.jpg" class="img-fluid" alt="man image"/>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <img src="images/security.jpg" class="img-fluid" alt="security image"/>
+                    </div>
+                </div>
             </div>
-
             <div class="col d-none d-lg-block text-uppercase">
                 <p class="text-center">The Last</p>
                 <article class="d-flex">
@@ -112,31 +115,13 @@
                 </article>
                 <article>
                     <p class="text-muted">Last Tweet</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto inventore labore numquam
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.git  Architecto inventore labore numquam
                         quis vel. Laborum natus nobis officia porro similique.</p>
                 </article>
             </div>
         </div>
     </main>
-
-    <!--    <style>-->
-    <!--        .image-margin {-->
-    <!--            padding: 10px;-->
-    <!--            background-color: #e6e6e6;-->
-    <!--            border-radius: 5px;-->
-    <!--        }-->
-    <!--    </style>-->
-
-    <!--    <style>-->
-    <!--        .image-margin {-->
-    <!--            padding: 10px;-->
-    <!--            background-color: #e6e6e6;-->
-    <!--            border-radius: 5px;-->
-    <!--            margin-right: -5px; /* Adjust the negative margin to reduce spacing */-->
-    <!--            margin-bottom: -5px; /* Adjust the negative margin to reduce spacing */-->
-    <!--        }-->
-    <!--    </style>-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-
 </html>
